@@ -23,16 +23,22 @@
     <form>
         <input type="text" />
         <input type="number" />
-        <input type="button" />
+        <input type="button" value="check" />
     </form>
     <script>
         // how to work with Jquery
         /* jQuery(document).ready(function(){
-                  code
-              })*/
+                            code
+                        })*/
         $(function() {
             // code
             // $('selector').action()
+
+            $("div>p:nth-child(odd)").css("background-color", "red");
+            $("[type=number]").css({
+                "background-color": "red",
+                color: "white",
+            });
         });
     </script>
 </body>
