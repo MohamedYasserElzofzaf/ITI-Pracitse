@@ -7,9 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="jquery-3.6.0.js"></script>
+    <style>
+        .myClass {
+            background-color: red;
+            border: 2px solid grey;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 <body>
+    <h2>Hello</h2>
+    <div>
+        <p>this is p inside div</p>
+        <p style="width: 100px">this is p inside div</p>
+        <section>
+            <p>this is p inside section inside a div</p>
+        </section>
+
+        <p style="width: 100px">this is p inside div</p>
+        <p id="myp" class="myClass">this is p inside div</p>
+        <p>this is p inside div</p>
+        <p>this is p inside div</p>
+        <span> this is <span></span> </span>
+    </div>
+    <section>
+        <p>p after div</p>
+        <span> test </span>
+    </section>
+    <form>
+        <input type="text" />
+        <input type="number" />
+        <input type="button" value="check" />
+    </form>
+    <ul>
+        <li>Coffee</li>
+        <li>Dark Coffee</li>
+        <li>Press Coffee</li>
+    </ul>
     <script src="main.js"></script>
 </body>
 
