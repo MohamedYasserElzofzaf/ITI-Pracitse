@@ -7,10 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="jquery-3.6.0.js"></script>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: darkred;
+            position: relative;
+            left: 0;
+        }
+    </style>
 </head>
 
 <body>
-    <div></div>
+    <div id="box"></div>
+    <script>
+        $(function() {
+            $("#box").animate({
+                    left: "500px",
+                    width: "200px",
+                    height: "200px",
+                    "border-radius": "50%",
+                },
+                3000
+            );
+            $(document).on("keyup", function(e) {
+                switch (e.key) {
+                    case "ArrowRight":
+                        {
+                            $("#box").animate({
+                                left: "+=10px",
+                            });
+                            break;
+                        }
+                    case "ArrowLeft":
+                        {
+                            $("#box").animate({
+                                left: "-=10px",
+                            });
+                            break;
+                        }
+                    case "ArrowUp":
+                        {
+                            $("#box").animate({
+                                top: "-=10px",
+                            });
+                            break;
+                        }
+                    case "ArrowDown":
+                        {
+                            $("#box").animate({
+                                top: "+=10px",
+                            });
+                            break;
+                        }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
