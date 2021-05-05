@@ -7,4 +7,12 @@ $(function() {
 
     // ============================================
     // EVENTS
+    $("[value=check]").click(function(e) {
+        // console.log("clicked");
+        $("#myp").toggleClass("myClass");
+    });
+    $("[value=check]").on("click", function() {
+        // $("p").fadeOut(1500).delay(2000).fadeIn(2000);
+        $("p").slideUp(1500).delay(2000).slideDown(2000);
+    });
 });
