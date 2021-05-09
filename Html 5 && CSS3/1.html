@@ -8,6 +8,17 @@
     <title>Document</title>
 </head>
 
-<body></body>
+<body>
+    <meter min="0" max="100" value="70" low="40" high="85"></meter>
+
+    <progress id="pr" max="100" value="40"></progress>
+    <button onclick="AddProgress()">Progress</button>
+
+    <script>
+        function AddProgress() {
+            document.querySelector("#pr").value += 5;
+        }
+    </script>
+</body>
 
 </html>
