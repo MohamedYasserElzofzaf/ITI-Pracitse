@@ -18,12 +18,10 @@ function sayHi() {
 }
 sayHi();
 
-
 // =====================Arrow function ==================================
-var fun = ()=>{
-    
-}
-
-
-
-
+var fun = (num) => {
+    return num + num;
+};
+var fun1 = (num) => num + num;
+console.log(fun(5));
+console.log(fun1(5));
