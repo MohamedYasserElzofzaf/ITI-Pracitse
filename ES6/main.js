@@ -17,3 +17,13 @@ function sayHi() {
     // console.log(i);
 }
 sayHi();
+
+
+// =====================Arrow function ==================================
+var fun = ()=>{
+    
+}
+
+
+
+
