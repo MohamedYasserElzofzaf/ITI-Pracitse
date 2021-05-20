@@ -75,3 +75,22 @@ for (const me of arr) {
 }
 
 // ========================iterables ============================
+let cars = ["skoda", "kia", "hounda"];
+
+function* genny() {
+    // yield "Hello my darkness";
+    // yield cars[0];
+    // yield cars[1];
+    // yield cars[2];
+    let i = 0;
+    yield cars[i];
+    i++;
+    yield cars[i];
+    i++;
+    yield cars[i];
+}
+let iter = genny();
+console.log(iter.next());
+console.log(iter.next());
+console.log(iter.next());
+console.log(iter.next());
