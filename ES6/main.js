@@ -66,4 +66,12 @@ const street = address.street;
 const city = address.city;
 const country = address.country;
 // we can use instead
-const { street, city, country } = address;
+// const { street, city, country } = address;
+
+// ============================For of ========================
+const arr = ["hello", "darkness", "my", "old", "freind"];
+for (const me of arr) {
+    console.log(me);
+}
+
+// ========================iterables ============================
