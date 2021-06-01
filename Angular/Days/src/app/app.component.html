@@ -1,6 +1,7 @@
 <div>
     <h1>Parent component</h1>
-    data:{{parentData}}
+    data:{{ parentData }}
     <app-home [homeData]="parentData"></app-home>
-    <app-login></app-login>
+    <app-login (ourEvent)="GetData($event)"></app-login>
+    Data :{{ parentDataFromLogin }}
 </div>
