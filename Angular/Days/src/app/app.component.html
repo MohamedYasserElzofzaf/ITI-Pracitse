@@ -1,2 +1,6 @@
-<app-home></app-home>
-<app-login></app-login>
+<div>
+    <h1>Parent component</h1>
+    data:{{parentData}}
+    <app-home [homeData]="parentData"></app-home>
+    <app-login></app-login>
+</div>
