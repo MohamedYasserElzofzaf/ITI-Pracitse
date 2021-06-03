@@ -5,18 +5,17 @@ import { AppComponent } from './app.component';
 import { TestValidComponent } from './components/test-valid/test-valid.component';
 import { LoginComponent } from './components/component-interaction/login/login.component';
 import { HomeComponent } from './components/component-interaction/home/home.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestValidComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, ReactiveFormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
