@@ -9,3 +9,5 @@ var peopleFactory = function(name, age, state) {
     };
     return temp;
 };
+const person1 = peopleFactory("Ali", 25, "single");
+person1.printPerson();
