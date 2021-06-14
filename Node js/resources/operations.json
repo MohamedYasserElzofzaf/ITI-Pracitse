@@ -1,1 +1,6 @@
-[{}]
+[
+    { "operator": "+", "operand1": "8", "operand2": "9", "result": 17 },
+    { "operator": "+", "operand1": "10", "operand2": "9", "result": 19 },
+    { "operator": "plus", "operand1": "10", "operand2": "45", "result": 55 },
+    { "operator": "+", "operand1": "8", "operand2": "9", "result": 17 }
+]
