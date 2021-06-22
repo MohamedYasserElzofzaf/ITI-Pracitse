@@ -17,6 +17,7 @@ class App extends React.Component {
             onClick = {
                 () => {
                     console.log("clicked");
+                    this.setState({ name: "Mohamed" });
                 }
             }
             />{" "} <
