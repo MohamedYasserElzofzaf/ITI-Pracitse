@@ -8,8 +8,18 @@ class App extends React.Component {
     }
 
     render() {
+        const styles = {
+            container: {
+                backgroundColor: "lightgrey",
+                padding: "5px",
+                margin: "5px",
+                border: "2px solid black",
+                borderRadius: "5px",
+                textAlign: "center",
+            },
+        };
         return ( <
-            div >
+            div style = { styles.container } >
             <
             h1 > Hello!!{ this.state.name } < /h1>;{" "} <
             input type = "button"
