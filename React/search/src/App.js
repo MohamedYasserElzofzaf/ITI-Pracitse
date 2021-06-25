@@ -1,7 +1,13 @@
+import { Component } from "react";
 import "./App.css";
 
-function App() {
-    return <div className = "App" > < /div>;
-}
+export default class App extends Component {
+    constructor() {
+        super();
+        this.state = {};
+    }
 
-export default App;
+    render() {
+        return <div > Hello < /div>;
+    }
+}
