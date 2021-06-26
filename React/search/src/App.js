@@ -11,12 +11,12 @@ export default class App extends Component {
             newsList: NEWSLIST,
         };
     }
-
+    keywordsChanged = (keywords) => {};
     render() {
         return ( <
             div > { " " } <
-            Search / >
-            <
+            Search onKeywordsChange = { this.keywordsChanged }
+            /> <
             NewsList list = { this.state.newsList }
             />{" "} <
             /div>
