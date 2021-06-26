@@ -1,4 +1,5 @@
 import { Component } from "react";
+import Search from "./components/search";
 import "./App.css";
 
 export default class App extends Component {
@@ -8,6 +9,10 @@ export default class App extends Component {
     }
 
     render() {
-        return <div > Hello < /div>;
+        return ( <
+            div > { " " } <
+            Search / > { " " } <
+            /div>
+        );
     }
 }
