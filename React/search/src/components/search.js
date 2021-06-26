@@ -12,11 +12,16 @@ export default class Search extends Component {
         return ( <
             div className = "search-comp" >
             <
+            h2 > Search Component < /h2>{" "} <
             input type = "text"
             placeholder = "Search by title"
             value = { this.state.keywords }
             onChange = {
-                (e) => this.setState({ keywords: e.target.value }) }
+                (e) =>
+                this.setState({
+                    keywords: e.target.value,
+                })
+            }
             />{" "} <
             p > keywords: { this.state.keywords } < /p>{" "} <
             /div>
