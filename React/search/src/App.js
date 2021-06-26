@@ -17,7 +17,7 @@ export default class App extends Component {
             div > { " " } <
             Search / >
             <
-            NewsLis list = { this.state.newsList }
+            NewsList list = { this.state.newsList }
             />{" "} <
             /div>
         );
