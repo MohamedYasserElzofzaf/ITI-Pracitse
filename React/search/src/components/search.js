@@ -17,10 +17,13 @@ export default class Search extends Component {
             placeholder = "Search by title"
             value = { this.state.keywords }
             onChange = {
-                (e) =>
-                this.setState({
-                    keywords: e.target.value,
-                })
+                (e) => {
+                    this.setState((state) => {
+                        state.keywords = e.target.value;
+                        return state;
+                    });
+                    this.props.onKeywordsChange(e.target.value);
+                }
             }
             />{" "} <
             p > keywords: { this.state.keywords } < /p>{" "} <

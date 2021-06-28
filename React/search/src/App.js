@@ -9,15 +9,22 @@ export default class App extends Component {
         super();
         this.state = {
             newsList: NEWSLIST,
+            filteredList: NEWSLIST,
         };
     }
-    keywordsChanged = (keywords) => {};
+    filterNewsList = (keywords) => {
+        //   filter
+        const filteredList = this.state.newsList.filter((item) =>
+            item.user.includes(keywords)
+        );
+        this.setState({ filteredList: filteredList });
+    };
     render() {
         return ( <
             div > { " " } <
-            Search onKeywordsChange = { this.keywordsChanged }
-            /> <
-            NewsList list = { this.state.newsList }
+            Search onKeywordsChange = { this.filterNewsList }
+            />{" "} <
+            NewsList list = { this.state.filteredList }
             />{" "} <
             /div>
         );
