@@ -14,9 +14,9 @@ interface Country {
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  searchTerm: string;
-  countries: Country[];
-  term: string;
+  searchTerm: string = '';
+  countries!: Country[];
+  term: string = '';
 
   constructor(private http: HttpClient) {}
 
